@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load staticfiles %}
+
+<div class="container">
+
+        <h1> Ajouter des réseaux sociaux </h1>
+        	<div class="reseaux">
+                <ul>
+                    <li><a href="login/facebook"><img src = "../static/images/connexion_facebook.png" alt = "connect with facebook"></a></li>
+                    <li><a href="login/google+"><img src = "../static/images/connexion_google+.png" alt = "connect with google+"></a></li>
+                    <li><a href ="login/linkedin"><img src = "../static/images/connexion_linkedin.png" alt = "connect with linkedin"></a></li>
+        	    </ul>
+        	</div>
+
+        	<div class="bouton-bar">
+    		<ul>
+    			<li> <a href="{% url 'app.views.graphe' %}" class="logo"> <img src="../static/images/graphe.png" alt=" "> </a> </li>
+				<li> <a href="{% url 'app.views.objectif' %}" class="logo"> <img src="../static/images/pencil.png" alt=" "> </a> </li>
+				<li> <a href="{% url 'app.views.suggestions' %}" class="logo"> <img src="../static/images/valide.png" alt=" "> </a> </li>
+    		</ul>
+    	</div>
+</div>
+
+{% endblock content %}
