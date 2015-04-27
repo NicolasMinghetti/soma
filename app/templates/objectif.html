@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load staticfiles %}
+
+<div class="container">
+
+
+        <h1> Définir mon objectif </h1>
+        <div class="objectif">
+
+        </div>
+        
+        <div class="bouton-bar">
+    		<ul> 
+				<li> <a href="{% url 'app.views.graphe' %}" class="logo"> <img src="../static/images/graphe.png" alt=" "> </a> </li>  
+				<li> <a href="{% url 'app.views.suggestions' %}" class="logo"> <img src="../static/images/valide.png" alt=" "> </a> </li>  
+				<li> <a href="{% url 'app.views.reseaux' %}" class="logo"> <img src="../static/images/ajout.png" alt=" "> </a> </li>  
+    		</ul>
+    	</div>
+
+</div>
+
+
+{% endblock content %}

@@ -1,0 +1,237 @@
+{% load staticfiles %}
+
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>3 Carousel Layout (BS 3)</title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+		<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+<div class="navbar-wrapper">
+  <div class="container">
+    <div class="navbar navbar-default navbar-static-top">
+
+        <div class="navbar-header">
+	    <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	    </a>
+        <a class="navbar-brand" href="/">SOMA</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Accueil</a></li>
+            <li><a href="contact/" target="ext">Contact</a></li>
+            <!--<li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>-->
+        </div>
+
+    </div>
+  </div><!-- /container -->
+</div><!-- /navbar wrapper -->
+
+{% block content %}
+{% endblock %}
+
+  <!-- FOOTER -->
+  <footer>
+		<!-- Resaux sociaux -->
+			<tbody>
+						<tr>
+								<td align="center" valign="top" style="padding:9px">
+										<table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse">
+				<tbody><tr>
+						<td align="center" style="padding-left:9px;padding-right:9px">
+								<table border="0" cellpadding="0" cellspacing="0" width="100%" style="border:1px solid #eeeeee;background-color:#fafafa;border-collapse:collapse">
+										<tbody><tr>
+												<td align="center" valign="top" style="padding-top:9px;padding-right:9px;padding-left:9px">
+													Suivez-nous sur :</hr>
+								<table border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse">
+									<tbody><tr>
+										<td valign="top">
+																					<table align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse">
+																							<tbody><tr>
+																									<td align="center" valign="top" style="padding-right:10px;padding-bottom:5px">
+																											<a href="https://www.facebook.com/soma" style="word-wrap:break-word" target="_blank"><img src="https://ci3.googleusercontent.com/proxy/g6FtADNL7Sv6fmPqvszVWCqAbU0tjF_Gc6HVsQzehNF03FiexbApFmdikQPIzKGp9w5NcePMdldTFYdEICqQt_qAwqKVXbFmFAUoUr1WUWdygv3SQvBUCixcsUN05T2SOg=s0-d-e1-ft#http://cdn-images.mailchimp.com/icons/social-block-v2/color-facebook-96.png" alt="Facebook" width="48" style="width:48px;max-width:48px;display:block;border:0;outline:none;text-decoration:none" class="CToWUd"></a>
+																									</td>
+																							</tr>
+																							<tr>
+																									<td align="center" valign="top" style="padding-right:10px;padding-bottom:9px">
+																											<a href="https://www.facebook.com/soma" style="color:#606060;font-family:Arial;font-size:11px;font-weight:normal;line-height:100%;text-align:center;text-decoration:none;word-wrap:break-word" target="_blank">Facebook</a>
+																									</td>
+																							</tr>
+																					</tbody></table>
+																			<table align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse">
+																							<tbody><tr>
+																									<td align="center" valign="top" style="padding-right:10px;padding-bottom:5px">
+																											<a href="https://twitter.com/soma" style="word-wrap:break-word" target="_blank"><img src="https://ci5.googleusercontent.com/proxy/hFOjQ4wBdntqcGvfhBxlewt4oRPay1AgDxeGA2KSt6GX8xUpulayqoXVVNqwuZ0g7QlJixaZglnX02_rfg0tjqG9O0bvjNY-3whYug2Kp-2prncKll_iWKHP15CaRUlu=s0-d-e1-ft#http://cdn-images.mailchimp.com/icons/social-block-v2/color-twitter-96.png" alt="Twitter" width="48" style="width:48px;max-width:48px;display:block;border:0;outline:none;text-decoration:none" class="CToWUd"></a>
+																									</td>
+																							</tr>
+																							<tr>
+																									<td align="center" valign="top" style="padding-right:10px;padding-bottom:9px">
+																											<a href="https://twitter.com/soma" style="color:#606060;font-family:Arial;font-size:11px;font-weight:normal;line-height:100%;text-align:center;text-decoration:none;word-wrap:break-word" target="_blank">Twitter</a>
+																									</td>
+																							</tr>
+																					</tbody></table>
+																					<table align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse">
+
+																							<tbody><tr>
+																									<td align="center" valign="top" style="padding-right:0;padding-bottom:5px">
+																											<a href="https://www.youtube.com/user/soma" style="word-wrap:break-word" target="_blank" class="playable"><img src="https://ci4.googleusercontent.com/proxy/zUkKIJfjrKoj7T8BHJge3gfPAp8YJ6X3kDVPptymCrBbB1ebploEtiLPgsSNErDrohiN4Cdc0vPmmuFi232ARFFc9yzBpQqz8fSFoZaUR9xvQXC5FKxpOgd_ZdmzC8vw=s0-d-e1-ft#http://cdn-images.mailchimp.com/icons/social-block-v2/color-youtube-96.png" alt="YouTube" width="48" style="width:48px;max-width:48px;display:block;border:0;outline:none;text-decoration:none" class="CToWUd"></a>
+																									</td>
+																							</tr>
+																							<tr>
+																									<td align="center" valign="top" style="padding-right:0;padding-bottom:9px">
+																											<a href="https://www.youtube.com/user/soma" style="color:#606060;font-family:Arial;font-size:11px;font-weight:normal;line-height:100%;text-align:center;text-decoration:none;word-wrap:break-word" target="_blank">YouTube</a>
+																									</td>
+																							</tr>
+																					</tbody></table>
+										</td>
+									</tr>
+								</tbody></table>
+												</td>
+										</tr>
+								</tbody></table>
+						</td>
+				</tr>
+		</tbody></table>
+		<!-- /Resaux sociaux -->
+    <p class="pull-right"><a href="#">Revenir en haut</a></p>
+    <p>This Bootstrap layout is compliments of Bootply. · <a href="http://www.bootply.com/62603">Edit on Bootply.com</a></p>
+
+
+
+	            </td>
+	        </tr>
+	    </tbody>
+	</footer>
+
+</div><!-- /.container -->
+	<!-- script references -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	</body>
+=======
+<html>
+<head>
+    <title>SOMA</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="{% static 'css/soma.css' %}">
+</head>
+
+<body>
+
+    <div class="page-header">
+    	<ul>
+    		<li> <a href="{% url 'app.views.index' %}" class="logo"> <img src="../static/images/logo.jpg" alt=" "> </a> </li>
+    		<li> <h1> <a href="{% url 'app.views.index' %}" class="logo"> SOMA </a></h1> </li>
+            {% if user and user.is_authenticated %}
+            	<li> <div class='page-header_username'> {{ user.get_short_name|default:user.username }}</div>
+            	<li> <a href="/logout" class="logout">logout</a></li>
+            {% endif %}
+        </ul>
+    </div>
+
+
+
+    <div class="content container">
+        <div class="row">
+            <div class="col-md-8">
+
+            {% block content %}
+
+            {% endblock %}
+			<br>
+			<br>
+            </div>
+        </div>
+
+		<!-- FOOTER -->
+		<footer> <!-- Reseaux sociaux -->
+		<tbody>
+			<tr>
+			<td align="center" valign="top" style="padding:9px">
+			<table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse">
+		<tbody><tr>
+			<td align="center" style="padding-left:9px;padding-right:9px">
+			<table border="0" cellpadding="0" cellspacing="0" width="100%" style="border:1px solid #eeeeee;background-color:#fafafa;border-collapse:collapse">
+		<tbody><tr>
+			<td align="center" valign="top" style="padding-top:9px;padding-right:9px;padding-left:9px"> Suivez-nous sur :</hr>
+			<table border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse">
+		<tbody><tr>
+			<td valign="top">
+			<table align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse">
+		<tbody><tr>
+			<td align="center" valign="top" style="padding-right:10px;padding-bottom:5px">
+				<a href="https://www.facebook.com/soma" style="word-wrap:break-word" target="_blank"><img src="https://ci3.googleusercontent.com/proxy/g6FtADNL7Sv6fmPqvszVWCqAbU0tjF_Gc6HVsQzehNF03FiexbApFmdikQPIzKGp9w5NcePMdldTFYdEICqQt_qAwqKVXbFmFAUoUr1WUWdygv3SQvBUCixcsUN05T2SOg=s0-d-e1-ft#http://cdn-images.mailchimp.com/icons/social-block-v2/color-facebook-96.png" alt="Facebook" width="48" style="width:48px;max-width:48px;display:block;border:0;outline:none;text-decoration:none" class="CToWUd"></a>
+			</td>
+			</tr>
+			<tr>
+			<td align="center" valign="top" style="padding-right:10px;padding-bottom:9px">
+				<a href="https://www.facebook.com/soma" style="color:#606060;font-family:Arial;font-size:11px;font-weight:normal;line-height:100%;text-align:center;text-decoration:none;word-wrap:break-word" target="_blank">Facebook</a>
+			</td>
+			</tr>
+		</tbody></table>
+			<table align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse">
+		<tbody><tr>
+			<td align="center" valign="top" style="padding-right:10px;padding-bottom:5px">
+				<a href="https://twitter.com/soma" style="word-wrap:break-word" target="_blank"><img src="https://ci5.googleusercontent.com/proxy/hFOjQ4wBdntqcGvfhBxlewt4oRPay1AgDxeGA2KSt6GX8xUpulayqoXVVNqwuZ0g7QlJixaZglnX02_rfg0tjqG9O0bvjNY-3whYug2Kp-2prncKll_iWKHP15CaRUlu=s0-d-e1-ft#http://cdn-images.mailchimp.com/icons/social-block-v2/color-twitter-96.png" alt="Twitter" width="48" style="width:48px;max-width:48px;display:block;border:0;outline:none;text-decoration:none" class="CToWUd"></a>
+			</td>
+			</tr>
+			<tr>
+			<td align="center" valign="top" style="padding-right:10px;padding-bottom:9px">
+				<a href="https://twitter.com/soma" style="color:#606060;font-family:Arial;font-size:11px;font-weight:normal;line-height:100%;text-align:center;text-decoration:none;word-wrap:break-word" target="_blank">Twitter</a>
+			</td>
+			</tr>
+		</tbody></table>
+			<table align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse">
+		<tbody><tr>
+			<td align="center" valign="top" style="padding-right:0;padding-bottom:5px">
+				<a href="https://www.youtube.com/user/soma" style="word-wrap:break-word" target="_blank" class="playable"><img src="https://ci4.googleusercontent.com/proxy/zUkKIJfjrKoj7T8BHJge3gfPAp8YJ6X3kDVPptymCrBbB1ebploEtiLPgsSNErDrohiN4Cdc0vPmmuFi232ARFFc9yzBpQqz8fSFoZaUR9xvQXC5FKxpOgd_ZdmzC8vw=s0-d-e1-ft#http://cdn-images.mailchimp.com/icons/social-block-v2/color-youtube-96.png" alt="YouTube" width="48" style="width:48px;max-width:48px;display:block;border:0;outline:none;text-decoration:none" class="CToWUd"></a>
+			</td>
+			</tr>
+			<tr>
+			<td align="center" valign="top" style="padding-right:0;padding-bottom:9px">
+				<a href="https://www.youtube.com/user/soma" style="color:#606060;font-family:Arial;font-size:11px;font-weight:normal;line-height:100%;text-align:center;text-decoration:none;word-wrap:break-word" target="_blank">YouTube</a>
+			</td>
+			</tr>
+		</tbody></table>
+			</td>
+			</tr>
+		</tbody></table>
+			</td>
+			</tr>
+		</tbody></table>
+			</td>
+			</tr>
+		</tbody></table>
+    		</td>
+	        </tr>
+	    </tbody>
+		</footer> <!-- /Reseaux sociaux -->
+	</div><!-- /.container -->
+</body>
+
+>>>>>>> 4a019b9aef590ef3439be748c275eeaaafae660d
+</html>
