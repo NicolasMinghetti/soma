@@ -1,6 +1,9 @@
 from django.db import models
 from django.utils import timezone
+<<<<<<< HEAD
+=======
 from django.contrib.auth.models import User
+>>>>>>> 4a019b9aef590ef3439be748c275eeaaafae660d
 
 class Post(models.Model):
     author = models.ForeignKey('auth.User')
@@ -17,6 +20,8 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+<<<<<<< HEAD
+=======
 
 class UserProfile(models.Model):
     #on link a l user :
@@ -28,3 +33,4 @@ class UserProfile(models.Model):
     email = models.CharField(max_length=30)
     facebook_link = models.CharField(max_length=30)
     facebook_id = models.CharField(max_length=30)
+>>>>>>> 4a019b9aef590ef3439be748c275eeaaafae660d

@@ -1,4 +1,13 @@
 from django.shortcuts import render
+<<<<<<< HEAD
+
+from django.utils import timezone
+
+
+# Create your views here.
+
+def index(request):
+=======
 from django.utils import timezone
 from django.contrib.auth import logout
 from django.shortcuts import redirect
@@ -23,4 +32,5 @@ def test_view(request):
 
 def logout_view(request):
     logout(request)
+>>>>>>> 4a019b9aef590ef3439be748c275eeaaafae660d
     return render(request, 'index.html', {})
