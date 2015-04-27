@@ -26,27 +26,13 @@ TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
-<<<<<<< HEAD
-
-# Application definition
-
 INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.auth',
-    'app',
-=======
-INSTALLED_APPS = (
-    'django.contrib.admin',
-    'django.contrib.auth',
->>>>>>> 4a019b9aef590ef3439be748c275eeaaafae660d
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-<<<<<<< HEAD
-)
-
-=======
     'social.apps.django_app.default',
     'app',
 )
@@ -80,7 +66,7 @@ SOCIAL_AUTH_PIPELINE = (
     'social.pipeline.social_auth.associate_user',
     'social.pipeline.social_auth.load_extra_data',
     'social.pipeline.user.user_details',
-    # 'app.custom_pipeline.save_profile',
+    #'app.custom_pipeline.save_profile',
 )
 
 SOCIAL_AUTH_FACEBOOK_KEY = '370272176513777'
@@ -91,7 +77,8 @@ FACEBOOK_PROFILE_EXTRA_PARAMS = {'locale': 'ru_RU'}
 SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/graphe'
 SOCIAL_AUTH_LOGIN_URL = '/'
 
->>>>>>> 4a019b9aef590ef3439be748c275eeaaafae660d
+AUTH_PROFILE_MODULE = 'app.userprofile'
+
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
