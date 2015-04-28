@@ -9,38 +9,41 @@
   <h1> Définir mon objectif </h1>
   <div class="objectif">
     Je désire : <div>
-
       <div class="dropdown clearfix">
         <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display:block;position:static;margin-bottom:5px;">
-          <li><a style="red" tabindex="-1" href="/objectif/1">Rencontrer plus</a></li>
-          <li><a tabindex="-1" href="/objectif/2">Être plus</a></li>
-          <li><a tabindex="-1" href="/objectif/3">Renforcer mon groupe d'amis</a></li>
+          <li {% if 'objectif/1' in current_path.current_path %} class="active" {% endif %}><a tabindex="-1" href="/objectif/1">Rencontrer plus</a></li>
+          <li {% if 'objectif/2' in current_path.current_path %} class="active" {% endif %}><a tabindex="-1" href="/objectif/2">Être plus</a></li>
+          <li {% if 'objectif/3' in current_path.current_path %} class="active" {% endif %}><a tabindex="-1" href="/objectif/3">Renforcer mon groupe d'amis</a></li>
         </ul>
       </div>
 
-      {% if current_path.current_path = '/objectif/1' %}
+      {% if 'objectif/1' in current_path.current_path %}
       <div class="dropdown clearfix">
         <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display:block;position:static;margin-bottom:5px;">
-          <li><a tabindex="-1" href="{{ current_path.current_path }}/1">De femmes</a></li>
-          <li><a tabindex="-1" href="{{ current_path.current_path }}/2">D'hommes</a></li>
-          <li><a tabindex="-1" href="{{ current_path.current_path }}/3">De personnes (sexe indifférent)</a></li>
-          <li><a tabindex="-1" href="{{ current_path.current_path }}/3">De professionnels</a></li>
+          <li {% if 'objectif/1/1' in current_path.current_path %} class="active" {% endif %}><a tabindex="-1" href="/objectif/1/1">De femmes</a></li>
+          <li {% if 'objectif/1/2' in current_path.current_path %} class="active" {% endif %}><a tabindex="-1" href="/objectif/1/2">D'hommes</a></li>
+          <li {% if 'objectif/1/3' in current_path.current_path %} class="active" {% endif %}><a tabindex="-1" href="/objectif/1/3">De personnes (sexe indifférent)</a></li>
+          <li {% if 'objectif/1/4' in current_path.current_path %} class="active" {% endif %}><a tabindex="-1" href="/objectif/1/4">De professionnels</a></li>
+        </ul>
+      </div>
+      {% if 'objectif/1/1' in current_path.current_path or 'objectif/1/2' in current_path.current_path %}
+      afficher l'age.
+      {% endif %}
+
+      {% endif %}
+      {% if 'objectif/2' in current_path.current_path %}
+      <div class="dropdown clearfix">
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display:block;position:static;margin-bottom:5px;">
+          <li {% if 'objectif/2/1' in current_path.current_path %} class="active" {% endif %}><a tabindex="-1" href="/objectif/2/1">Populaire</a></li>
+          <li {% if 'objectif/2/2' in current_path.current_path %} class="active" {% endif %}><a tabindex="-1" href="/objectif/2/2">Central</a></li>
         </ul>
       </div>
       {% endif %}
-      {% if current_path.current_path = '/objectif/2' %}
+      {% if 'objectif/2/' in current_path.current_path %}
       <div class="dropdown clearfix">
         <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display:block;position:static;margin-bottom:5px;">
-          <li><a tabindex="-1" href="{{ current_path.current_path }}/1">Populaire</a></li>
-          <li><a tabindex="-1" href="{{ current_path.current_path }}/2">Central</a></li>
-        </ul>
-      </div>
-      {% endif %}
-      {% if current_path.current_path = '/objectif/3' %}
-      <div class="dropdown clearfix">
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display:block;position:static;margin-bottom:5px;">
-          <li><a tabindex="-1" href="{{ current_path.current_path }}/1">Dans ma région</a></li>
-          <li><a tabindex="-1" href="{{ current_path.current_path }}/2">Sur mon lieu de travail</a></li>
+          <li {% if 'objectif/3/1' in current_path.current_path %} class="active" {% endif %}><a tabindex="-1" href="/objectif/3/1">Dans ma région</a></li>
+          <li {% if 'objectif/3/2' in current_path.current_path %} class="active" {% endif %}><a tabindex="-1" href="/objectif/3/2">Sur mon lieu de travail</a></li>
         </ul>
       </div>
       {% endif %}
@@ -50,9 +53,9 @@
 
   <div class="bouton-bar">
     <ul>
-      <li> <a href="{% url 'app.views.graphe' %}" class="logo"> <img src="../static/images/graphe.png" alt=" "> </a> </li>
-      <li> <a href="{% url 'app.views.suggestions' %}" class="logo"> <img src="../static/images/valide.png" alt=" "> </a> </li>
-      <li> <a href="{% url 'app.views.reseaux' %}" class="logo"> <img src="../static/images/ajout.png" alt=" "> </a> </li>
+      <li> <a href="{% url 'app.views.graphe' %}" class="logo"> <img src="{% static 'images/graphe.png'%}" alt=" "> </a> </li>
+      <li> <a href="{% url 'app.views.suggestions' %}" class="logo"> <img src="{% static 'images/valide.png'%}" alt=" "> </a> </li>
+      <li> <a href="{% url 'app.views.reseaux' %}" class="logo"> <img src="{% static 'images/ajout.png'%}" alt=" "> </a> </li>
     </ul>
   </div>
 

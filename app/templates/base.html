@@ -14,7 +14,7 @@
 
     <div class="page-header">
     	<ul>
-    		<li> <a href="{% url 'app.views.index' %}" class="logo"> <img src="../static/images/logo.jpg" alt=" "> </a> </li>
+    		<li> <a href="{% url 'app.views.index' %}" class="logo"> <img src="{% static 'images/logo.jpg'%}" alt=" "> </a> </li>
     		<li> <h1> <a href="{% url 'app.views.index' %}" class="logo"> SOMA </a></h1> </li>
             {% if user and user.is_authenticated %}
             	<li> <div class='page-header_username'> {{ user.get_short_name|default:user.username }}</div>
