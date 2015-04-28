@@ -1,2 +1,0 @@
-# soma
-Soma project
