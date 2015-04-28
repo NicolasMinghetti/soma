@@ -6,27 +6,27 @@
 <div class="container">
 
 
-        <h1> Définir mon objectif </h1>
-        <div class="objectif">
-          Je désire : <div>
-    <div class="dropdown clearfix">
-     <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display:block;position:static;margin-bottom:5px;">
-        <li><a tabindex="-1" href="{{ current_path.current_path }}/1">Rencontrer plus</a></li>
-        <li><a tabindex="-1" href="{{ current_path.current_path }}/2">Être plus</a></li>
-        <li><a tabindex="-1" href="{{ current_path.current_path }}/3">Renforcer mon groupe d'amis</a></li>
-      </ul>
+  <h1> Définir mon objectif </h1>
+  <div class="objectif">
+    Je désire : <div>
+      <div class="dropdown clearfix">
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display:block;position:static;margin-bottom:5px;">
+          <li><a tabindex="-1" href="{{ current_path.current_path }}/1">Rencontrer plus</a></li>
+          <li><a tabindex="-1" href="{{ current_path.current_path }}/2">Être plus</a></li>
+          <li><a tabindex="-1" href="{{ current_path.current_path }}/3">Renforcer mon groupe d'amis</a></li>
+        </ul>
+      </div>
     </div>
-</div>
 
-        </div>
+  </div>
 
-        <div class="bouton-bar">
-    		<ul>
-				<li> <a href="{% url 'app.views.graphe' %}" class="logo"> <img src="../static/images/graphe.png" alt=" "> </a> </li>
-				<li> <a href="{% url 'app.views.suggestions' %}" class="logo"> <img src="../static/images/valide.png" alt=" "> </a> </li>
-				<li> <a href="{% url 'app.views.reseaux' %}" class="logo"> <img src="../static/images/ajout.png" alt=" "> </a> </li>
-    		</ul>
-    	</div>
+  <div class="bouton-bar">
+    <ul>
+      <li> <a href="{% url 'app.views.graphe' %}" class="logo"> <img src="../static/images/graphe.png" alt=" "> </a> </li>
+      <li> <a href="{% url 'app.views.suggestions' %}" class="logo"> <img src="../static/images/valide.png" alt=" "> </a> </li>
+      <li> <a href="{% url 'app.views.reseaux' %}" class="logo"> <img src="../static/images/ajout.png" alt=" "> </a> </li>
+    </ul>
+  </div>
 
 </div>
 
