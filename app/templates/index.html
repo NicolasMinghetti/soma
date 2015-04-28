@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+	<div class = 'all'>
+		<h1>Social Optimizer Managing Assistant</h1>
+
+	    	<p>En modélisant votre cercle social
+	    	comme un vaste graphe dont les personnes sont des
+	    	nœuds et les relations des liens, l’application SOMA évalue
+	    	la place de chacun de vos amis et vous permet une meilleure
+	    	compréhension de votre réseau à travers une interface visuelle
+	    	claire, interactive et agréable. Une fois inscrit, SOMA vous donne
+	    	accès	à	une	série de suggestions que vous pouvez réaliser ou
+	    	non et vous suit et	récompense	au fur et à mesure de votre progression.
+	    	Mais SOMA ne s’arrête pas là,	elle se	propose	aussi de vous montrer
+	    	comment	en tirer	le meilleur. Vous voulez être la personne que tout
+	    	le monde connaît ? connaître plus de monde ? ou peut-être voulez-vous
+	    	renforcer	votre	groupe d’amis?	rencontrer des gens au
+	    	profil précis ? <br> Vous définissez votre	objectif et SOMA vous donne	des
+	    	A	partir	de	votre but, SOMA	va	trouver quelles interactions	sont
+	    	essentielles à sa réalisation	en optimisant le temps que vous consacrez
+	    	à	vos	relations	sociales,	tout en élisant pour vous les	affinités
+	    	qui pourraient vous rendre plus efficace. Le moment venu si vous
+	    	croisez	une des	personnes	élues	par	SOMA,	prenez le temps	de
+	    	jeter	un œil	à la fiche récapitulative et aller la rencontrer:
+	    	ça vaudra le coup. L’idée c’est	qu’une fois sur	SOMA vous
+	    	ne perdiez plus un instant devant vos réseaux	sociaux	mais allez
+	    	directement sociabiliser avec les bonnes clés en main, parce que la
+	    	vraie vie ne se passe	pas avec des amis virtuels derrière un écran.
+	    	</p>
+
+		{% if user.is_anonymous %}
+			<div class ="connect">
+				{% if user and not user.is_anonymous %}
+					Bonjour, {{ user.get_short_name|default:user.username }}, connecte-toi ici :
+				{% endif %}
+				<br>
+				<br>
+				<a href="login/facebook" class="btn_connexion"> <img src="../static/images/connexion_facebook.png" alt=" "> </a>
+			</div>
+		{% endif %}
+
+	</div>
+{% endblock content %}

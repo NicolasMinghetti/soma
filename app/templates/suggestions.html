@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load staticfiles %}
+
+<div class="container">
+        
+        <h1> Mes suggestions </h1>
+        <div class="suggestions">
+        		<img src="//placehold.it/1024x700" class="img-responsive" >
+        </div>
+        
+        <div class="bouton-bar">
+    		<ul> 
+    			<li> <a href="{% url 'app.views.graphe' %}" class="logo"> <img src="../static/images/graphe.png" alt=" "> </a> </li>  
+				<li> <a href="{% url 'app.views.objectif' %}" class="logo"> <img src="../static/images/pencil.png" alt=" "> </a> </li>  
+				<li> <a href="{% url 'app.views.reseaux' %}" class="logo"> <img src="../static/images/ajout.png" alt=" "> </a> </li>  
+    		</ul>
+    	</div>
+
+</div>
+
+{% endblock content %}
