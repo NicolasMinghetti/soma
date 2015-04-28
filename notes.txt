@@ -3,11 +3,11 @@
 ---------------------------------------------------------------------
 pour faire fonctionner social auth : 
 
-pip install OAuth
-pip install python-openid
-pip install python-social-auth
+python pip install OAuth
+python pip install python-openid
+python pip install python-social-auth
 
-#puis j'ai modifiÃ© les settings, il faut donc refaire les migrations : 
+#puis j'ai modifié les settings, il faut donc refaire les migrations : 
 
 python manage.py makemigrations 
 python manage.py migrate 

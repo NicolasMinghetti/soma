@@ -1,8 +1,9 @@
-from social.pipeline import *
+from social.pipeline import * 
 
 def save_profile(backend, user, response, *args, **kwargs):
     if backend.name == 'facebook':
-        if user.user_profile is None:
+        user_profile = user.get_profile()
+        if user_profile is None:
             user_profile = UserProfile(user_id=user.id)
         user_profile.facebook_access_token = response.get('access_token')
         user_profile.locale = response.get('locale')

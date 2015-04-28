@@ -2,7 +2,6 @@ from django.shortcuts import render
 from django.utils import timezone
 from django.contrib.auth import logout
 from django.shortcuts import redirect
-from django.contrib.auth.models import User
 
 def index(request):
     return render(request, 'index.html', {})
@@ -19,17 +18,9 @@ def reseaux(request):
 def suggestions(request):
     return render(request, 'suggestions.html', {})
 
+def test_view(request):
+    return render(request, 'test_view.html', {})
+
 def logout_view(request):
     logout(request)
     return render(request, 'index.html', {})
-
-
-def test_view(request):
-    if request.user.is_authenticated():
-        u = request.user
-        username = u.username
-        user_facebook_link = u.userprofile.facebook_link
-        # user_facebook_link = u.UserProfile.facebook_link
-        return render(request, 'test_view.html', {'username':username, 'user_facebook_link':user_facebook_link})
-    else :
-        return render(request, 'test_view.html')

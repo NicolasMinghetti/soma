@@ -77,8 +77,6 @@ FACEBOOK_PROFILE_EXTRA_PARAMS = {'locale': 'ru_RU'}
 SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/graphe'
 SOCIAL_AUTH_LOGIN_URL = '/'
 
-AUTH_PROFILE_MODULE = 'app.userprofile'
-
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
