@@ -17,6 +17,9 @@ def objectifChoisir(request):
     current_path=get_current_path(request)
     return render(request, 'objectifChoisir.html', {'current_path':current_path})
 
+def monCompte(request):
+    current_path=get_current_path(request)
+    return render(request, 'monCompte.html', {'current_path':current_path})
 
 def reseaux(request):
     return render(request, 'reseaux.html', {})

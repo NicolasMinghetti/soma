@@ -6,6 +6,7 @@ urlpatterns = [
     url(r'^graphe$', views.graphe),
     url(r'^index$', views.index),
     url(r'^objectif/choisir', views.objectifChoisir),
+    url(r'^monCompte$', views.monCompte),
     url(r'^objectif', views.objectif),
     url(r'^reseaux$', views.reseaux),
     url(r'^suggestions$', views.suggestions),
