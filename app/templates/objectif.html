@@ -26,10 +26,39 @@
           <li {% if 'objectif/1/4' in current_path.current_path %} class="active" {% endif %}><a tabindex="-1" href="/objectif/1/4">De professionnels</a></li>
         </ul>
       </div>
-      {% if 'objectif/1/1' in current_path.current_path or 'objectif/1/2' in current_path.current_path %}
-      afficher l'age.
-      {% endif %}
 
+      {% if 'objectif/1/1' in current_path.current_path %}
+      <div class="dropdown clearfix">
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display:block;position:static;margin-bottom:5px;">
+          <li {% if 'objectif/1/1/1' in current_path.current_path %} class="active" {% endif %}><a tabindex="-1" href="/objectif/valider111">Dans ma région</a></li>
+          <li {% if 'objectif/1/1/2' in current_path.current_path %} class="active" {% endif %}><a tabindex="-1" href="/objectif/valider112">Sur mon lieu de travail</a></li>
+        </ul>
+      </div>
+      {% endif %}
+      {% if 'objectif/1/2' in current_path.current_path %}
+      <div class="dropdown clearfix">
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display:block;position:static;margin-bottom:5px;">
+          <li {% if 'objectif/1/2/1' in current_path.current_path %} class="active" {% endif %}><a tabindex="-1" href="/objectif/valider121">Dans ma région</a></li>
+          <li {% if 'objectif/1/2/2' in current_path.current_path %} class="active" {% endif %}><a tabindex="-1" href="/objectif/valider122">Sur mon lieu de travail</a></li>
+        </ul>
+      </div>
+      {% endif %}
+      {% if 'objectif/1/3' in current_path.current_path %}
+      <div class="dropdown clearfix">
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display:block;position:static;margin-bottom:5px;">
+          <li {% if 'objectif/1/3/1' in current_path.current_path %} class="active" {% endif %}><a tabindex="-1" href="/objectif/valider131">Dans ma région</a></li>
+          <li {% if 'objectif/1/3/2' in current_path.current_path %} class="active" {% endif %}><a tabindex="-1" href="/objectif/valider132">Sur mon lieu de travail</a></li>
+        </ul>
+      </div>
+      {% endif %}
+      {% if 'objectif/1/4' in current_path.current_path %}
+      <div class="dropdown clearfix">
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display:block;position:static;margin-bottom:5px;">
+          <li {% if 'objectif/1/4/1' in current_path.current_path %} class="active" {% endif %}><a tabindex="-1" href="/objectif/valider141">Dans ma région</a></li>
+          <li {% if 'objectif/1/4/2' in current_path.current_path %} class="active" {% endif %}><a tabindex="-1" href="/objectif/valider142">Sur mon lieu de travail</a></li>
+        </ul>
+      </div>
+      {% endif %}
       {% endif %}
       {% if 'objectif/2' in current_path.current_path %}
       <div class="dropdown clearfix">
@@ -38,15 +67,32 @@
           <li {% if 'objectif/2/2' in current_path.current_path %} class="active" {% endif %}><a tabindex="-1" href="/objectif/2/2">Central</a></li>
         </ul>
       </div>
-      {% endif %}
-      {% if 'objectif/2/' in current_path.current_path %}
+
+      {% if 'objectif/2/1' in current_path.current_path %}
       <div class="dropdown clearfix">
         <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display:block;position:static;margin-bottom:5px;">
-          <li {% if 'objectif/3/1' in current_path.current_path %} class="active" {% endif %}><a tabindex="-1" href="/objectif/3/1">Dans ma région</a></li>
-          <li {% if 'objectif/3/2' in current_path.current_path %} class="active" {% endif %}><a tabindex="-1" href="/objectif/3/2">Sur mon lieu de travail</a></li>
+          <li {% if 'objectif/2/1/1' in current_path.current_path %} class="active" {% endif %}><a tabindex="-1" href="/objectif/valider211">Dans ma région</a></li>
+          <li {% if 'objectif/2/1/2' in current_path.current_path %} class="active" {% endif %}><a tabindex="-1" href="/objectif/valider212">Sur mon lieu de travail</a></li>
         </ul>
       </div>
       {% endif %}
+      {% if 'objectif/2/2' in current_path.current_path %}
+      <div class="dropdown clearfix">
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display:block;position:static;margin-bottom:5px;">
+          <li {% if 'objectif/2/2/1' in current_path.current_path %} class="active" {% endif %}><a tabindex="-1" href="/objectif/valider221">Dans ma région</a></li>
+          <li {% if 'objectif/2/2/2' in current_path.current_path %} class="active" {% endif %}><a tabindex="-1" href="/objectif/valider222">Sur mon lieu de travail</a></li>
+        </ul>
+      </div>
+      {% endif %}
+      {% endif %}
+
+      {% if 'objectif/3' in current_path.current_path %}
+      <div class="dropdown clearfix">
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display:block;position:static;margin-bottom:5px;">
+          <li {% if 'objectif/3/1' in current_path.current_path %} class="active" {% endif %}><a tabindex="-1" href="/objectif/valider31">Dans ma région</a></li>
+          <li {% if 'objectif/3/2' in current_path.current_path %} class="active" {% endif %}><a tabindex="-1" href="/objectif/valider32">Sur mon lieu de travail</a></li>
+        </ul>
+      </div>
     </div>
 
   </div>
