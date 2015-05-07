@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load staticfiles %}
+
+Vous avez choisi un objectif, bravo !
+
+Vous êtes ici:<hr/>
+{{ current_path.current_path }}
+<hr/>
+
+{% endblock content %}
