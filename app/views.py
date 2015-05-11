@@ -3,14 +3,28 @@ from django.utils import timezone
 from django.contrib.auth import logout
 from django.shortcuts import redirect
 
+
 def index(request):
-    return render(request, 'index.html', {})
+    if request.user :
+        print("is authenticated :) ")
+        return render(request, 'index.html')
+    else:
+        print("not authenticated")
+        return render(request, 'index.html')
+
+
+
+#
+# def index(request):
+#     return render(request, 'index.html', {})
 
 def graphe(request):
     return render(request, 'graphe.html', {})
 
 def objectif(request):
     current_path=get_current_path(request)
+    if request.user.is_authenticated():
+        print("bite")
     return render(request, 'objectif.html', {'current_path':current_path})
 
 def objectifChoisir(request):
