@@ -15,6 +15,10 @@
 .logout{
 
 }
+.slider-width100
+{
+    width: 10px;
+}
 
 page-header h1{
     color : #FFFFFF;
@@ -63,7 +67,7 @@ p {
  	display: block;
  	margin: auto;
  }
- 
+
  .connect {
  	text-align: center;
  }
@@ -88,6 +92,3 @@ p {
 
 
 /* ------------------- Page OBJECTIFS ------------------- */
-
-
-

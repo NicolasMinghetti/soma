@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load staticfiles %}
+
+
+<div class="container">
+
+
+  <h1> Bonjour {{ user.get_short_name|default:user.username }},</h1>
+
+  Tu as défini 3 objectifs pour cette semaine ! Je vais t'aider à les réussir !
+
+<hr/>
+<h2>Objectif 1:</h2>
+<h3>Etre plus populaire</h3>
+
+Ce soir ton amis <a href="https://www.facebook.com/cam.cls">Camille Clausse</a> organise une soirée chez elle : <a href="sandrine.galice@insa-lyon.fr">évenement facebook</a>.<br/>
+50 personnes ont répondu présents dont 41 personnes que tu ne connais pas.<br/>
+Profites-en pour rencontrer du monde !<br/>
+<hr/>
+<h2>Objectif 2:</h2>
+<h3>Rencontrer le DRH de Solucom</h3>
+
+Le DRH de Solucom est amis avec <a href="https://www.facebook.com/pierre.ritoux">Pierre Ritoux</a>.<br/>
+<a href="https://www.facebook.com/pierre.ritoux">Pierre Ritoux</a> participe à l'événement <a href="https://www.facebook.com/events/378264632377391/">Nuits sonores 2015</a>.<br/>
+Tu peux en profiter pour récupérer le contact si tu le croises.<br/>
+<hr/>
+<h2>Objectif 3:</h2>
+<h3>Rencontrer plus de filles</h3>
+
+De nombreuses filles participent à l'événement <a href="https://www.facebook.com/events/1653143718248312/">TOURNOI DE VOLLEY STAPS</a>.</br>
+C'est une bonne occasion pour faire des rencontres.
+
+<br/>
+
+{% endblock content %}

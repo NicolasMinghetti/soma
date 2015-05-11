@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load staticfiles %}
+
+
+<div class="container">
+
+
+  <h1> Faire une recherche </h1>
+
+Je recherche :
+<form action="/recherche" method="GET">
+<fieldset>
+  <SELECT name="type" size="1">
+  <OPTION>Un DRH
+  <OPTION>Un Ingénieur
+  <OPTION>Un Commerciale
+  <OPTION>Autre
+  </SELECT>
+<br/><br/>
+Dans l'entreprise :
+<input type="text" name="entreprise" value="">
+<br/><br/>
+<input type="submit" value="Rechercher"></fieldset>
+</form>
+
+
+{% endblock content %}

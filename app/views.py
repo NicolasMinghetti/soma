@@ -31,6 +31,14 @@ def objectifChoisir(request):
     current_path=get_current_path(request)
     return render(request, 'objectifChoisir.html', {'current_path':current_path})
 
+def recherche(request):
+    current_path=get_current_path(request)
+    return render(request, 'recherche.html', {'current_path':current_path})
+
+def coach(request):
+    current_path=get_current_path(request)
+    return render(request, 'coachPersonalise.html', {'current_path':current_path})
+
 def monCompte(request):
     current_path=get_current_path(request)
     return render(request, 'monCompte.html', {'current_path':current_path})
