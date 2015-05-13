@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load staticfiles %}
+
+Voici les objectifs que vous avez choisi :
+
+<div class="container">
+    <div class="bouton-bar">
+      <ul>
+        <li> <a href="/VosObjectifs/supprimer1" class="logo"> <img src="{% static 'images/supp.png'%}" alt="Supprimer cet objectif"> </a> </li>
+      </ul>
+    </div>
+    <div class="graphe">
+  <h1> Objectif 1: </h1>
+<h2>{{objectif1a}} {{objectif1b}} {{objectif1c}}</h2>
+</div>
+</div>
+
+<br />
+<hr />
+<div class="container">
+    <div class="bouton-bar">
+      <ul>
+        <li> <a href="/VosObjectifs/supprimer2" class="logo"> <img src="{% static 'images/supp.png'%}" alt="Supprimer cet objectif"> </a> </li>
+      </ul>
+    </div>
+    <div class="graphe">
+  <h1> Objectif 2: </h1>
+<h2>{{objectif2a}} {{objectif2b}} {{objectif2c}}</h2>
+</div>
+</div>
+
+<br />
+<hr />
+<div class="container">
+    <div class="bouton-bar">
+      <ul>
+        <li> <a href="/VosObjectifs/supprimer3" class="logo"> <img src="{% static 'images/supp.png'%}" alt="Supprimer cet objectif"> </a> </li>
+      </ul>
+    </div>
+    <div class="graphe">
+  <h1> Objectif 3: </h1>
+<h2>{{objectif3a}} {{objectif3b}} {{objectif3c}}</h2>
+</div>
+</div>
+
+<br />
+<hr />
+
+<div class="container">
+
+    <h1>Définissez de nouveaux <a href="/objectif"/>objectifs</a> </h1>
+
+</div>
+
+{% endblock content %}
