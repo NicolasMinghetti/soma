@@ -5,7 +5,6 @@ from django.contrib.auth.models import User
 class UserProfile(models.Model):
     user = models.ForeignKey(User, unique=True, related_name='profile')
     photo = models.TextField()
-    objectif = []
     objectif1 = models.CharField(max_length=10)
     objectif1a=models.CharField(max_length=30)
     objectif1b=models.CharField(max_length=30)
@@ -18,13 +17,6 @@ class UserProfile(models.Model):
     objectif3a=models.CharField(max_length=30)
     objectif3b=models.CharField(max_length=30)
     objectif3c=models.CharField(max_length=30)
-
-class ChoixDeObjectif(models.Model):
-    objectifa = models.CharField(max_length=10)
-    objectifb = models.CharField(max_length=30)
-    objectifc = models.CharField(max_length=30)
-    objectifd = models.CharField(max_length=30)
-
 #old tutorial
 # class Post(models.Model):
 #     author = models.ForeignKey('auth.User')
