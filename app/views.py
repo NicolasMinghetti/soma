@@ -50,32 +50,18 @@ def objectif(request):
         if form.is_valid():
             # process the data in form.cleaned_data as required
             # ...
-
-            profile.objectif.append("new")
             print(request.POST['choix'])
             print(profile.objectif)
-            if profile.objectif1=="Null":
-                profile.objectif1=request.POST['choix']
-                profile.objectif1a=request.POST['choix1']
-                profile.objectif1b=request.POST['choix2']
-                profile.objectif1c=request.POST['choix3']
-            elif profile.objectif2=="Null":
-                profile.objectif2=request.POST['choix']
-                profile.objectif2a=request.POST['choix1']
-                profile.objectif2b=request.POST['choix2']
-                profile.objectif2c=request.POST['choix3']
-            else:
-                profile.objectif3=request.POST['choix']
-                profile.objectif3a=request.POST['choix1']
-                profile.objectif3b=request.POST['choix2']
-                profile.objectif3c=request.POST['choix3']
+            profile.objectif1=request.POST['choix']
+            profile.objectif1a=request.POST['choix1']
+            profile.objectif1b=request.POST['choix2']
+            profile.objectif1c=request.POST['choix3']
+            profile.objectif1d=request.POST['amount']
             profile.save()
             print("On sauvegarde...")
             # redirect to a new URL:
             print("Debut ojectif")
             print(profile.objectif1)
-            print(profile.objectif2)
-            print(profile.objectif3)
             print("/fin objectif")
 
 
@@ -94,38 +80,17 @@ def recherche(request):
 def vosObjectifs(request):
     current_path=get_current_path(request)
     profile=UserProfile.objects.get(user=request.user)
-    return render(request, 'VosObjectifs.html', {'current_path':current_path,'objectif1':profile.objectif1,'objectif1a':profile.objectif1a,'objectif1b':profile.objectif1b,'objectif1c':profile.objectif1c,'objectif2':profile.objectif2,'objectif2a':profile.objectif2a,'objectif2b':profile.objectif2b,'objectif2c':profile.objectif2c,'objectif3':profile.objectif3,'objectif3a':profile.objectif3a, 'objectif3b':profile.objectif3b, 'objectif3c':profile.objectif3c})
+    if profile.objectif1d=="NULL":
+        profile.objectif1d=""
+    return render(request, 'VosObjectifs.html', {'current_path':current_path,'objectif1':profile.objectif1,'objectif1a':profile.objectif1a,'objectif1b':profile.objectif1b,'objectif1c':profile.objectif1c,'objectif1d':profile.objectif1d})
 
-def vosObjectifsSupprimer1(request):
+def vosObjectifsSupprimer(request):
     current_path=get_current_path(request)
     profile=UserProfile.objects.get(user=request.user)
-
     profile.objectif1="Null"
     profile.objectif1a="Vous n'avez pas défini d'objectif"
     profile.objectif1b=""
     profile.objectif1c=""
-    profile.save()
-    return HttpResponseRedirect('/VosObjectifs/')
-
-def vosObjectifsSupprimer2(request):
-    current_path=get_current_path(request)
-    profile=UserProfile.objects.get(user=request.user)
-
-    profile.objectif2="Null"
-    profile.objectif2a="Vous n'avez pas défini d'objectif"
-    profile.objectif2b=""
-    profile.objectif2c=""
-    profile.save()
-    return HttpResponseRedirect('/VosObjectifs/')
-
-def vosObjectifsSupprimer3(request):
-    current_path=get_current_path(request)
-    profile=UserProfile.objects.get(user=request.user)
-
-    profile.objectif3="Null"
-    profile.objectif3a="Vous n'avez pas défini d'objectif"
-    profile.objectif3b=""
-    profile.objectif3c=""
     profile.save()
     return HttpResponseRedirect('/VosObjectifs/')
 

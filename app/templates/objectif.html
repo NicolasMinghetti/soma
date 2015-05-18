@@ -39,9 +39,10 @@
                 </div>
                 {% if 'objectif/1/1/1' in current_path.current_path %}
                 <label for="amount">Age:</label>
-                <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                <input type="text" name="amount" id="amount" style="border:0; color:#f6931f; font-weight:bold;">
                 <div id="slider-range"></div> <br/>
                 <input type="hidden" name="choix1" value="Rencontrer plus">
+
                 <input type="hidden" name="choix2" value="de femmes">
                 <input type="hidden" name="choix3" value="dans ma région">
                 <input type="hidden" name="choix" value="111">
@@ -49,7 +50,7 @@
                 {% endif %}
                 {% if 'objectif/1/1/2' in current_path.current_path %}
                 <label for="amount">Age:</label>
-                <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                <input type="text" name="amount" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
                 <div id="slider-range"></div> <br/>
                 <input type="hidden" name="choix1" value="Rencontrer plus">
                 <input type="hidden" name="choix2" value="de femmes">
@@ -70,7 +71,7 @@
                 </div>
                 {% if 'objectif/1/2/1' in current_path.current_path %}
                 <label for="amount">Age:</label>
-                <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                <input type="text" name="amount" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
                 <div id="slider-range"></div> <br/>
                 <input type="hidden" name="choix1" value="Rencontrer plus">
                 <input type="hidden" name="choix2" value="d'hommes">
@@ -80,7 +81,7 @@
                 {% endif %}
                 {% if 'objectif/1/2/2' in current_path.current_path %}
                 <label for="amount">Age:</label>
-                <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                <input type="text" name="amount" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
                 <div id="slider-range"></div> <br/>
                 <input type="hidden" name="choix1" value="Rencontrer plus">
                 <input type="hidden" name="choix2" value="d'hommes">
@@ -100,7 +101,7 @@
                 </div>
                 {% if 'objectif/1/3/1' in current_path.current_path %}
                 <label for="amount">Age:</label>
-                <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                <input type="text" name="amount" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
                 <div id="slider-range"></div> <br/>
                 <input type="hidden" name="choix1" value="Rencontrer plus">
                 <input type="hidden" name="choix2" value="de personnes (sexe indifférent)">
@@ -110,7 +111,7 @@
                 {% endif %}
                 {% if 'objectif/1/3/2' in current_path.current_path %}
                 <label for="amount">Age:</label>
-                <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                <input type="text" name="amount" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
                 <div id="slider-range"></div> <br/>
                 <input type="hidden" name="choix1" value="Rencontrer plus">
                 <input type="hidden" name="choix2" value="de personnes (sexe indifférent)">
@@ -131,6 +132,7 @@
                 <input type="hidden" name="choix2" value="de professionnels">
                 <input type="hidden" name="choix3" value="dans ma région">
                 <input type="hidden" name="choix" value="141">
+                <input type="hidden" name="amount" value="NULL">
                 <input type="submit" class="btn btn-primary" value="Valider">
                 {% endif %}
                 {% if 'objectif/1/4/2' in current_path.current_path %}
@@ -138,6 +140,7 @@
                 <input type="hidden" name="choix2" value="de professionnels">
                 <input type="hidden" name="choix3" value="sur mon lieu de travail">
                 <input type="hidden" name="choix" value="142">
+                <input type="hidden" name="amount" value="NULL">
                 <input type="submit" class="btn btn-primary" value="Valider">
                 {% endif %}
                 {% endif %}
@@ -162,6 +165,7 @@
                 <input type="hidden" name="choix2" value="populaire">
                 <input type="hidden" name="choix3" value="dans ma région">
                 <input type="hidden" name="choix" value="211">
+                <input type="hidden" name="amount" value="NULL">
                 <input type="submit" class="btn btn-primary" value="Valider">
                 {% endif %}
                 {% if 'objectif/2/1/2' in current_path.current_path %}
@@ -169,6 +173,7 @@
                 <input type="hidden" name="choix2" value="populaire">
                 <input type="hidden" name="choix3" value="sur mon lieu de travail">
                 <input type="hidden" name="choix" value="212">
+                <input type="hidden" name="amount" value="NULL">
                 <input type="submit" class="btn btn-primary" value="Valider">
                 {% endif %}
                 {% endif %}
@@ -184,6 +189,7 @@
                 <input type="hidden" name="choix2" value="central">
                 <input type="hidden" name="choix3" value="dans ma région">
                 <input type="hidden" name="choix" value="221">
+                <input type="hidden" name="amount" value="NULL">
                 <input type="submit" class="btn btn-primary" value="Valider">
                 {% endif %}
                 {% if 'objectif/2/2/2' in current_path.current_path %}
@@ -191,6 +197,7 @@
                 <input type="hidden" name="choix2" value="central">
                 <input type="hidden" name="choix3" value="sur mon lieu de travail">
                 <input type="hidden" name="choix" value="222">
+                <input type="hidden" name="amount" value="NULL">
                 <input type="submit" class="btn btn-primary" value="Valider">
                 {% endif %}
                 {% endif %}
@@ -208,6 +215,7 @@
                 <input type="hidden" name="choix2" value="dans ma région">
                 <input type="hidden" name="choix3" value=" ">
                 <input type="hidden" name="choix" value="31">
+                <input type="hidden" name="amount" value="NULL">
                 <input type="submit" class="btn btn-primary" value="Valider">
                 {% endif %}
                 {% if 'objectif/3/2' in current_path.current_path %}
@@ -215,6 +223,7 @@
                 <input type="hidden" name="choix2" value="sur mon lieu de travail">
                 <input type="hidden" name="choix3" value=" ">
                 <input type="hidden" name="choix" value="32">
+                <input type="hidden" name="amount" value="NULL">
                 <input type="submit" class="btn btn-primary" value="Valider">
                 {% endif %}
                 {% endif %}
