@@ -50,7 +50,10 @@ def objectif(request):
         if form.is_valid():
             # process the data in form.cleaned_data as required
             # ...
+
+            profile.objectif.append("new")
             print(request.POST['choix'])
+            print(profile.objectif)
             if profile.objectif1=="Null":
                 profile.objectif1=request.POST['choix']
                 profile.objectif1a=request.POST['choix1']

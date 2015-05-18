@@ -2,46 +2,65 @@
 {% block content %}
 {% load staticfiles %}
 
-Voici les objectifs que vous avez choisi :
-
 <div class="container">
+
+<div class="column col-xs-12 col-sm-12 col-md-12 col-lg-12 col-lg-offset-0">
+    Voici les objectifs que vous avez choisi :
+</hr>
+  <div class="portlet">
+    <div class="portlet-header bandeau"><span class="col-xs-8 col-sm-9 col-md-10 col-lg-10 col-lg-offset-0"><h4>Objectif 1 :</h4></span><span class="col-xs-3 col-sm-2 col-md-1 col-lg-1 col-lg-offset-0"><button class="btn btn-danger">Supprimer</button></span></div>
+    <div class="portlet-content">{{objectif1a}} {{objectif1b}} {{objectif1c}}</div>
+  </div>
+
+  <div class="portlet">
+      <div class="portlet-header bandeau"><span class="col-xs-8 col-sm-9 col-md-10 col-lg-10 col-lg-offset-0"><h4>Objectif 2 :</h4></span><span class="col-xs-3 col-sm-2 col-md-1 col-lg-1 col-lg-offset-0"><button class="btn btn-danger">Supprimer</button></span></div>
+    <div class="portlet-content">{{objectif2a}} {{objectif2b}} {{objectif2c}}</div>
+  </div>
+  <div class="portlet">
+      <div class="portlet-header bandeau"><span class="col-xs-8 col-sm-9 col-md-10 col-lg-10 col-lg-offset-0"><h4>Objectif 3 :</h4></span><span class="col-xs-3 col-sm-2 col-md-1 col-lg-1 col-lg-offset-0"><button class="btn btn-danger">Supprimer</button></span></div>
+    <div class="portlet-content">{{objectif3a}} {{objectif3b}} {{objectif3c}}</div>
+  </div>
+</div>
+<!--
+
+</div>
     <div class="bouton-bar">
-      <ul>
-        <li> <a href="/VosObjectifs/supprimer1" class="logo"> <img src="{% static 'images/supp.png'%}" alt="Supprimer cet objectif"> </a> </li>
-      </ul>
+        <ul>
+            <li> <a href="/VosObjectifs/supprimer1" class="logo"> <img src="{% static 'images/supp.png'%}" alt="Supprimer cet objectif"> </a> </li>
+        </ul>
     </div>
     <div class="graphe">
-  <h1> Objectif 1: </h1>
-<h2>{{objectif1a}} {{objectif1b}} {{objectif1c}}</h2>
-</div>
+        <h1> Objectif 1: </h1>
+        <h2>{{objectif1a}} {{objectif1b}} {{objectif1c}}</h2>
+    </div>
+
+
+<br />
+<hr />
+<div class="container">
+    <div class="bouton-bar">
+        <ul>
+            <li> <a href="/VosObjectifs/supprimer2" class="logo"> <img src="{% static 'images/supp.png'%}" alt="Supprimer cet objectif"> </a> </li>
+        </ul>
+    </div>
+    <div class="graphe">
+        <h1> Objectif 2: </h1>
+        <h2>{{objectif2a}} {{objectif2b}} {{objectif2c}}</h2>
+    </div>
 </div>
 
 <br />
 <hr />
 <div class="container">
     <div class="bouton-bar">
-      <ul>
-        <li> <a href="/VosObjectifs/supprimer2" class="logo"> <img src="{% static 'images/supp.png'%}" alt="Supprimer cet objectif"> </a> </li>
-      </ul>
+        <ul>
+            <li> <a href="/VosObjectifs/supprimer3" class="logo"> <img src="{% static 'images/supp.png'%}" alt="Supprimer cet objectif"> </a> </li>
+        </ul>
     </div>
     <div class="graphe">
-  <h1> Objectif 2: </h1>
-<h2>{{objectif2a}} {{objectif2b}} {{objectif2c}}</h2>
-</div>
-</div>
-
-<br />
-<hr />
-<div class="container">
-    <div class="bouton-bar">
-      <ul>
-        <li> <a href="/VosObjectifs/supprimer3" class="logo"> <img src="{% static 'images/supp.png'%}" alt="Supprimer cet objectif"> </a> </li>
-      </ul>
+        <h1> Objectif 3: </h1>
+        <h2>{{objectif3a}} {{objectif3b}} {{objectif3c}}</h2>
     </div>
-    <div class="graphe">
-  <h1> Objectif 3: </h1>
-<h2>{{objectif3a}} {{objectif3b}} {{objectif3c}}</h2>
-</div>
 </div>
 
 <br />
@@ -52,5 +71,5 @@ Voici les objectifs que vous avez choisi :
     <h1>Définissez de nouveaux <a href="/objectif"/>objectifs</a> </h1>
 
 </div>
-
+-->
 {% endblock content %}
