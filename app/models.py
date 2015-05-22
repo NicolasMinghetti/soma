@@ -1,6 +1,8 @@
 from django.db import models
 from django.utils import timezone
 from django.contrib.auth.models import User
+import json
+
 
 class Amis(models.Model):
     nom = models.CharField(max_length=40)
@@ -18,6 +20,20 @@ class UserProfile(models.Model):
     objectif1b=models.CharField(max_length=30)
     objectif1c=models.CharField(max_length=30)
     objectif1d=models.CharField(max_length=30)
+    amis='{""}'
+    def ajouterAmis(user, nom, prenom, travail, age, region):
+    # Add your code here
+        salaries = json.loads(salaries_json)
+        salaries[name] = salary
+
+        return salaries_json
+
+    # test code
+    salaries = '{"Alfred" : 300, "Jane" : 400 }'
+    new_salaries = add_employee(salaries, "Me", 800)
+    decoded_salaries = json.loads(new_salaries)
+    print(decoded_salaries["Alfred"])
+    print(decoded_salaries["Jane"])
 
 
 
